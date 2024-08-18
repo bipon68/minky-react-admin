@@ -162,4 +162,97 @@
     @apply block;
     padding-top: 100%;
   }
+
+  .text-primary {
+    @apply text-teal-500 !important;
+  }
+
+  a.text-primary:hover,
+  a.text-primary:focus {
+    @apply hover:text-teal-700 focus:text-teal-700 !important;
+  }
+
+  .text-secondary {
+    @apply text-gray-600 !important;
+  }
+
+  a.text-secondary:hover,
+  a.text-secondary:focus {
+    @apply hover:text-gray-700 focus:text-gray-700 !important;
+  }
+
+  .text-success {
+    @apply text-green-500 !important;
+  }
+
+  a.text-success:hover,
+  a.text-success:focus {
+    @apply hover:text-green-700 focus:text-green-700 !important;
+  }
+
+  .text-info {
+    @apply text-cyan-500 !important;
+  }
+
+  a.text-info:hover,
+  a.text-info:focus {
+    @apply hover:text-cyan-700 focus:text-cyan-700 !important;
+  }
+
+  .text-warning {
+    @apply text-yellow-500 !important;
+  }
+
+  a.text-warning:hover,
+  a.text-warning:focus {
+    @apply hover:text-yellow-700 focus:text-yellow-700 !important;
+  }
+
+  .text-danger {
+    @apply text-red-500 !important;
+  }
+
+  a.text-danger:hover,
+  a.text-danger:focus {
+    @apply hover:text-red-700 focus:text-red-700 !important;
+  }
+
+  .text-light {
+    @apply text-gray-100 !important;
+  }
+
+  a.text-light:hover,
+  a.text-light:focus {
+    @apply hover:text-gray-200 focus:text-gray-200 !important;
+  }
+
+  .text-dark {
+    @apply text-gray-800 !important;
+  }
+
+  a.text-dark:hover,
+  a.text-dark:focus {
+    @apply hover:text-gray-900 focus:text-gray-900 !important;
+  }
+
+  .text-body {
+    @apply text-gray-700 !important;
+  }
+
+  .text-muted,
+  .app-notification__meta {
+    @apply text-gray-600 !important;
+  }
+
+  .text-black-50 {
+    @apply text-black opacity-50 !important;
+  }
+
+  .text-white-50 {
+    @apply text-white opacity-50 !important;
+  }
+
+  .text-hide {
+    @apply hidden !important;
+  }
 }
