@@ -5,18 +5,18 @@ import { FaLaptop } from "react-icons/fa";
 const TailwindsEleHeader = () => {
   return (
     <div>
-      <div class="app-title mt-2">
-        <div class="div">
+      <div className="app-title mt-2">
+        <div className="div">
           <h1>
-            <i class="fa fa-laptop"></i>Tailwind Elements
+            <i className="fa fa-laptop"></i>Tailwind Elements
           </h1>
           <p>Tailwind Components</p>
         </div>
-        <ul class="app-breadcrumb breadcrumb flex items-center gap-1">
-          <li class="breadcrumb-item">
+        <ul className="app-breadcrumb breadcrumb flex items-center gap-1">
+          <li className="breadcrumb-item">
             <FaLaptop />
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <Link href="#">Tailwind Elements</Link>
           </li>
         </ul>
