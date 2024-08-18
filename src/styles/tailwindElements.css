@@ -485,4 +485,209 @@
   .badge-dark[href]:focus {
     @apply text-white no-underline bg-[#1d2124];
   }
+  .progress {
+    @apply flex h-4 overflow-hidden text-[0.65625rem] bg-[#e9ecef] rounded-md;
+  }
+
+  .progress-bar {
+    @apply flex flex-col justify-center text-white text-center whitespace-nowrap bg-[#009688] transition-[width] ease-[0.6s];
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    .progress-bar {
+      @apply transition-none;
+    }
+  }
+
+  .progress-bar-striped {
+    @apply bg-[linear-gradient(45deg,rgba(255,255,255,0.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.15)_50%,rgba(255,255,255,0.15)_75%,transparent_75%,transparent)] bg-[length:1rem_1rem];
+  }
+
+  .progress-bar-animated {
+    @apply animate-[progress-bar-stripes_1s_linear_infinite];
+  }
+  .jumbotron {
+    @apply p-8 mb-8 bg-gray-100 rounded-md;
+  }
+  .display-3 {
+    @apply text-6xl font-light leading-tight;
+  }
+  .list-group {
+    @apply flex flex-col p-0 mb-0;
+  }
+
+  .list-group-item-action {
+    @apply w-full text-gray-700 text-left;
+  }
+
+  .list-group-item-action:hover,
+  .list-group-item-action:focus {
+    @apply text-gray-700 no-underline bg-gray-100;
+  }
+
+  .list-group-item-action:active {
+    @apply text-gray-800 bg-gray-200;
+  }
+
+  .list-group-item {
+    @apply relative block p-3 mb-[-1px] bg-white border border-gray-200;
+  }
+
+  .list-group-item:first-child {
+    @apply rounded-t-md;
+  }
+
+  .list-group-item:last-child {
+    @apply mb-0 rounded-b-md;
+  }
+
+  .list-group-item:hover,
+  .list-group-item:focus {
+    @apply z-10 no-underline;
+  }
+
+  .list-group-item.disabled,
+  .list-group-item:disabled {
+    @apply text-gray-500 bg-white;
+  }
+
+  .list-group-item.active {
+    @apply z-20 text-white bg-teal-600 border-teal-600;
+  }
+
+  .list-group-flush .list-group-item {
+    @apply border-r-0 border-l-0 rounded-none;
+  }
+
+  .list-group-flush:first-child .list-group-item:first-child {
+    @apply border-t-0;
+  }
+
+  .list-group-flush:last-child .list-group-item:last-child {
+    @apply border-b-0;
+  }
+
+  .list-group-item-primary {
+    @apply text-teal-900 bg-teal-200;
+  }
+
+  .list-group-item-primary.list-group-item-action:hover,
+  .list-group-item-primary.list-group-item-action:focus {
+    @apply text-teal-900 bg-teal-300;
+  }
+
+  .list-group-item-primary.list-group-item-action.active {
+    @apply text-white bg-teal-900 border-teal-900;
+  }
+
+  .list-group-item-secondary {
+    @apply text-gray-800 bg-gray-300;
+  }
+
+  .list-group-item-secondary.list-group-item-action:hover,
+  .list-group-item-secondary.list-group-item-action:focus {
+    @apply text-gray-800 bg-gray-400;
+  }
+
+  .list-group-item-secondary.list-group-item-action.active {
+    @apply text-white bg-gray-800 border-gray-800;
+  }
+
+  .list-group-item-success {
+    @apply text-green-800 bg-green-200;
+  }
+
+  .list-group-item-success.list-group-item-action:hover,
+  .list-group-item-success.list-group-item-action:focus {
+    @apply text-green-800 bg-green-300;
+  }
+
+  .list-group-item-success.list-group-item-action.active {
+    @apply text-white bg-green-800 border-green-800;
+  }
+
+  .list-group-item-info {
+    @apply text-teal-800 bg-teal-100;
+  }
+
+  .list-group-item-info.list-group-item-action:hover,
+  .list-group-item-info.list-group-item-action:focus {
+    @apply text-teal-800 bg-teal-200;
+  }
+
+  .list-group-item-info.list-group-item-action.active {
+    @apply text-white bg-teal-800 border-teal-800;
+  }
+
+  .list-group-item-warning {
+    @apply text-yellow-800 bg-yellow-200;
+  }
+
+  .list-group-item-warning.list-group-item-action:hover,
+  .list-group-item-warning.list-group-item-action:focus {
+    @apply text-yellow-800 bg-yellow-300;
+  }
+
+  .list-group-item-warning.list-group-item-action.active {
+    @apply text-white bg-yellow-800 border-yellow-800;
+  }
+
+  .list-group-item-danger {
+    @apply text-red-800 bg-red-200;
+  }
+
+  .list-group-item-danger.list-group-item-action:hover,
+  .list-group-item-danger.list-group-item-action:focus {
+    @apply text-red-800 bg-red-300;
+  }
+
+  .list-group-item-danger.list-group-item-action.active {
+    @apply text-white bg-red-800 border-red-800;
+  }
+
+  .list-group-item-light {
+    @apply text-gray-700 bg-gray-100;
+  }
+
+  .list-group-item-light.list-group-item-action:hover,
+  .list-group-item-light.list-group-item-action:focus {
+    @apply text-gray-700 bg-gray-200;
+  }
+
+  .list-group-item-light.list-group-item-action.active {
+    @apply text-white bg-gray-700 border-gray-700;
+  }
+
+  .list-group-item-dark {
+    @apply text-gray-100 bg-gray-400;
+  }
+
+  .list-group-item-dark.list-group-item-action:hover,
+  .list-group-item-dark.list-group-item-action:focus {
+    @apply text-gray-100 bg-gray-500;
+  }
+
+  .list-group-item-dark.list-group-item-action.active {
+    @apply text-white bg-gray-900 border-gray-900;
+  }
+  .card {
+    @apply relative flex flex-col min-w-0 break-words bg-white border border-gray-200 rounded-md;
+  }
+  .card-body {
+    @apply flex-1 p-5;
+  }
+  .modal {
+    @apply fixed inset-0 z-[1050] hidden overflow-hidden outline-none;
+  }
+  .modal-dialog-centered {
+    @apply fixed inset-0 flex items-center justify-center py-2;
+  }
+
+  .modal-content {
+    @apply relative flex flex-col w-full pointer-events-auto bg-white border border-opacity-20 border-black rounded-md outline-none;
+  }
+
+  .modal-backdrop {
+    @apply fixed inset-0 z-[1040] bg-black;
+  }
 }
