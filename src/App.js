@@ -9,7 +9,7 @@ import TailwindsElements from "./pages/UIElements/TailwindElements/TailwindsElem
 
 function App() {
   return (
-    <div>
+    <div className="">
       <BrowserRouter>
         <Nav />
         <SideBar />

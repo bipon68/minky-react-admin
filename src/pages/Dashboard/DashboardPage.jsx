@@ -6,7 +6,7 @@ import DashboardContent from "./DashboardContent";
 
 const DashboardPage = () => {
   return (
-    <div className="mt-20 ml-56 ">
+    <div className="mt-20 ml-sidebar ">
       <main className="app-content">
         <DashboardHeader />
         <DashboardBox />

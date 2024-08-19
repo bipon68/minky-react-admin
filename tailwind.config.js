@@ -38,6 +38,9 @@ module.exports = {
       width: {
         sidebar: "230px",
       },
+      margin: {
+        sidebar: "230px",
+      },
       fontFamily: {
         niconne: ["Niconne", "cursive"],
       },

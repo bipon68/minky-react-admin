@@ -7,7 +7,7 @@
 @layer components {
   /* Navigation */
   .app-header {
-    @apply flex w-full h-14 bg-primary;
+    @apply flex fixed top-0 left-0 w-full h-14 z-50 bg-primary;
   }
   .app-header__left {
     @apply flex w-full;
@@ -33,7 +33,7 @@
 
   /* Sidebar */
   .app-sidebar {
-    @apply w-sidebar h-screen bg-[#222d32];
+    @apply top-14 left-0 fixed w-sidebar h-screen z-50 bg-[#222d32];
   }
   .app-sidebar__user {
     @apply flex justify-evenly items-center p-2 text-white text-base;
