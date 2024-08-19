@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 function SideBar({ isSidebarOpen }) {
   const [expandedMenu, setExpandedMenu] = useState(null);
 
+<<<<<<< Updated upstream
   const handleTreeviewToggle = (index) => {
     setExpandedMenu((prevIndex) => (prevIndex === index ? null : index));
   };
@@ -202,6 +203,33 @@ function SideBar({ isSidebarOpen }) {
         </li>
       </ul>
     </aside>
+=======
+function SideBar() {
+  const [showTreeview, setShowTreeview] = useState("");
+
+  return (
+    <div className="app-sidebar">
+      <SidebarUser />
+      <SidebarDashboard />
+      <SidebarUiElements
+        showTreeview={showTreeview}
+        setShowTreeview={setShowTreeview}
+      />
+      <SidebarCharts />
+      <SidebarForms
+        showTreeview={showTreeview}
+        setShowTreeview={setShowTreeview}
+      />
+      <SidebarTables
+        showTreeview={showTreeview}
+        setShowTreeview={setShowTreeview}
+      />
+      <SidebarPages
+        showTreeview={showTreeview}
+        setShowTreeview={setShowTreeview}
+      />
+    </div>
+>>>>>>> Stashed changes
   );
 }
 
