@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "./features/nav/Nav";
 import SideBar from "./features/sidebar/SideBar";
@@ -8,17 +8,11 @@ import "./App.css";
 import TailwindsElements from "./pages/UIElements/TailwindElements/TailwindsElements";
 
 function App() {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-
-  const handleSidebar = () => {
-    setSidebarOpen((prevState) => !prevState);
-  };
-
   return (
     <div>
       <BrowserRouter>
-        <Nav handleSidebar={handleSidebar} />
-        <SideBar isSidebarOpen={isSidebarOpen} />
+        <Nav />
+        <SideBar />
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/DashboardPage" element={<DashboardPage />} />

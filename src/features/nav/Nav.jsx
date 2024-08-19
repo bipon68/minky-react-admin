@@ -1,24 +1,23 @@
 import React from "react";
 import { FaBell, FaSearch, FaUser } from "react-icons/fa";
 import { IoMenuSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-function Nav({ handleSidebar }) {
+function Nav() {
   return (
     <div className="app-header">
-      <a className="app-header__logo" href="index.html">
-        Minky
-      </a>
-      {/* Sidebar toggle button */}
-      <button
-        className="app-sidebar__toggle"
-        aria-label="Hide Sidebar"
-        onClick={handleSidebar}
-      >
-        <IoMenuSharp />
-      </button>
+      <div className="app-header__left">
+        <div className="app-header__logo">
+          <Link to="index.html">Minky</Link>
+        </div>
+        {/* Sidebar toggle button */}
+        <button className="app-sidebar__toggle" aria-label="Hide Sidebar">
+          <IoMenuSharp />
+        </button>
+      </div>
       {/* Navbar Right Menu */}
       <ul className="app-nav">
-        <li className="app-search">
+        <div className="app-search">
           <input
             className="app-search__input"
             type="search"
@@ -27,28 +26,16 @@ function Nav({ handleSidebar }) {
           <button className="app-search__button">
             <FaSearch />
           </button>
-        </li>
+        </div>
         {/* Notification Menu */}
         <li className="dropdown mt-1">
-          <button
-            className="app-nav__item"
-            aria-label="Show notifications"
-            onClick={() => {
-              /* Handle notifications click */
-            }}
-          >
+          <button className="app-nav__item" aria-label="Show notifications">
             <FaBell />
           </button>
         </li>
         {/* User Menu */}
         <li className="dropdown mt-1">
-          <button
-            className="app-nav__item"
-            aria-label="Open Profile Menu"
-            onClick={() => {
-              /* Handle profile menu click */
-            }}
-          >
+          <button className="app-nav__item" aria-label="Open Profile Menu">
             <FaUser />
           </button>
         </li>
