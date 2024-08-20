@@ -2,7 +2,6 @@ import React from "react";
 import { FaAngleRight, FaCircle, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { forms } from "../Sidebar";
-
 function SidebarForms({ setShowTreeview, showTreeview }) {
   const handleTreeview = () => {
     setShowTreeview((prevState) => (prevState === "forms" ? "" : "forms"));
@@ -29,7 +28,6 @@ function SidebarForms({ setShowTreeview, showTreeview }) {
             </Link>
           </div>
         ))}
-      </div>
     </div>
   );
 }

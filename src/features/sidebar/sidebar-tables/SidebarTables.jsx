@@ -32,8 +32,5 @@ function SidebarTables({ setShowTreeview, showTreeview }) {
           ))}
         </div>
       </div>
-    </div>
-  );
-}
 
 export default SidebarTables;

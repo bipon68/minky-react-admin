@@ -1,6 +1,7 @@
 import React from "react";
 import { FaAngleRight, FaCircle, FaLaptop } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 import { uiElements } from "../Sidebar";
 
 function SidebarUiElements({ setShowTreeview, showTreeview }) {
@@ -21,6 +22,7 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
         <span className="app-menu__label">UI Elements</span>
         <FaAngleRight
           className={`transition-all duration-300 ease-in-out ${
+
             showTreeview === "uiElements" ? "rotate-90  " : ""
           }`}
         />
@@ -37,7 +39,6 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
           </div>
         ))}
       </div>
-    </div>
   );
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import { FaAngleRight, FaCircle } from "react-icons/fa";
 import { FiFileText } from "react-icons/fi";
 import { Link } from "react-router-dom";
+
 import { pages } from "../Sidebar";
 
 function SidebarPages({ setShowTreeview, showTreeview }) {
@@ -34,7 +35,6 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
               </Link>
             </div>
           ))}
-        </div>
       </div>
     </div>
   );
