@@ -35,6 +35,7 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
               </Link>
             </div>
           ))}
+        </div>
       </div>
     </div>
   );

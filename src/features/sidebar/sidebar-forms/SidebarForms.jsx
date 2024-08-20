@@ -28,6 +28,7 @@ function SidebarForms({ setShowTreeview, showTreeview }) {
             </Link>
           </div>
         ))}
+      </div>
     </div>
   );
 }

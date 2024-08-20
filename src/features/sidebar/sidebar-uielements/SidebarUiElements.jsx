@@ -22,7 +22,6 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
         <span className="app-menu__label">UI Elements</span>
         <FaAngleRight
           className={`transition-all duration-300 ease-in-out ${
-
             showTreeview === "uiElements" ? "rotate-90  " : ""
           }`}
         />
@@ -39,6 +38,7 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
           </div>
         ))}
       </div>
+    </div>
   );
 }
 
