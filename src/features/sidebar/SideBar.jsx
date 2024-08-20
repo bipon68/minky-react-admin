@@ -7,7 +7,6 @@ import SidebarCharts from "./sidebar-charts/SidebarCharts";
 import SidebarForms from "./sidebar-forms/SidebarForms";
 import SidebarTables from "./sidebar-tables/SidebarTables";
 import SidebarPages from "./sidebar-pages/SidebarPages";
-
 function SideBar() {
   const [showTreeview, setShowTreeview] = useState(false);
   const handleTreeview = () => {
@@ -15,17 +14,17 @@ function SideBar() {
     setShowTreeview((prevShowTreeview) => !prevShowTreeview);
   };
 
-  return (
+  return(
     <div className="app-sidebar">
       <SidebarUser />
       <SidebarDashboard />
       <SidebarUiElements
         showTreeview={showTreeview}
-        handleTreeview={handleTreeview}
       />
       <SidebarCharts />
       <SidebarForms
         showTreeview={showTreeview}
+
         handleTreeview={handleTreeview}
       />
       <SidebarTables

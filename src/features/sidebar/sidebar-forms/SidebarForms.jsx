@@ -1,39 +1,33 @@
 import React from "react";
 import { FaAngleRight, FaCircle, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-function SidebarForms({ handleTreeview, showTreeview }) {
+import { forms } from "../Sidebar";
+function SidebarForms({ setShowTreeview, showTreeview }) {
+  const handleTreeview = () => {
+    setShowTreeview((prevState) => (prevState === "forms" ? "" : "forms"));
+  };
   return (
     <div>
       <button className="app-menu__item" onClick={() => handleTreeview()}>
         <FaEdit />
         <span className="app-menu__label">Forms</span>
         <div className="treeview-indicator">
-          <FaAngleRight />
+          <FaAngleRight
+            className={`transition-all duration-300 ease-in-out ${
+              showTreeview === "forms" ? "rotate-90  " : ""
+            }`}
+          />
         </div>
       </button>
-      <div className={`treeview ${showTreeview === false ? "hidden" : ""}`}>
-        <div>
-          <Link className="treeview-item" href="form-components.html">
-            <FaCircle /> Form Components
-          </Link>
-        </div>
-        <div>
-          <Link className="treeview-item" href="form-custom.html">
-            <FaCircle /> Custom Components
-          </Link>
-        </div>
-        <div>
-          <Link className="treeview-item" href="form-samples.html">
-            <FaCircle /> Form Samples
-          </Link>
-        </div>
-        <div>
-          <Link className="treeview-item" href="form-notifications.html">
-            <FaCircle /> Form Notifications
-          </Link>
-        </div>
-      </div>
+      <div className={`treeview ${showTreeview === "forms" ? "" : "hidden"}`}>
+        {forms.map((items) => (
+          <div key={items.id}>
+            <Link className="treeview-item" to={items.link}>
+              <FaCircle />
+              {items.title}
+            </Link>
+          </div>
+        ))}
     </div>
   );
 }
