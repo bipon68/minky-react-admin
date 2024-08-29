@@ -11,19 +11,15 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
       prevState === "uiElements" ? "" : "uiElements"
     );
   };
+
   return (
     <div>
-      <button
-        onClick={() => handleTreeview()}
-        className="app-menu__item"
-        href="#"
-      >
+      <button onClick={handleTreeview} className="app-menu__item">
         <FaLaptop />
         <span className="app-menu__label">UI Elements</span>
         <FaAngleRight
           className={`transition-all duration-300 ease-in-out ${
-
-            showTreeview === "uiElements" ? "rotate-90  " : ""
+            showTreeview === "uiElements" ? "rotate-90" : ""
           }`}
         />
       </button>
@@ -39,6 +35,7 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
           </div>
         ))}
       </div>
+    </div>
   );
 }
 

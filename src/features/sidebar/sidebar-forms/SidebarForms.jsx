@@ -2,19 +2,21 @@ import React from "react";
 import { FaAngleRight, FaCircle, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { forms } from "../Sidebar";
+
 function SidebarForms({ setShowTreeview, showTreeview }) {
   const handleTreeview = () => {
     setShowTreeview((prevState) => (prevState === "forms" ? "" : "forms"));
   };
+
   return (
     <div>
-      <button className="app-menu__item" onClick={() => handleTreeview()}>
+      <button className="app-menu__item" onClick={handleTreeview}>
         <FaEdit />
         <span className="app-menu__label">Forms</span>
         <div className="treeview-indicator">
           <FaAngleRight
             className={`transition-all duration-300 ease-in-out ${
-              showTreeview === "forms" ? "rotate-90  " : ""
+              showTreeview === "forms" ? "rotate-90" : ""
             }`}
           />
         </div>
@@ -28,6 +30,7 @@ function SidebarForms({ setShowTreeview, showTreeview }) {
             </Link>
           </div>
         ))}
+      </div>
     </div>
   );
 }

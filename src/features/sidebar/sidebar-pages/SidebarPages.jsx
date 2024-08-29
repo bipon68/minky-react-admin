@@ -10,31 +10,35 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
     // Toggle between "pages" and an empty string
     setShowTreeview((prevState) => (prevState === "pages" ? "" : "pages"));
   };
+
   return (
     <div>
-      <div>
-        <button
-          onClick={() => handleTreeview()}
-          className="app-menu__item"
-          href="#"
-        >
-          <FiFileText />
-          <span className="app-menu__label">Pages</span>
-          <FaAngleRight
-            className={`transition-all duration-300 ease-in-out ${
-              showTreeview === "pages" ? "rotate-90  " : ""
-            }`}
-          />
-        </button>
-        <div className={`treeview ${showTreeview === "pages" ? "" : "hidden"}`}>
-          {pages.map((items) => (
-            <div key={items.id}>
-              <Link className="treeview-item" to={items.link}>
+      <button
+        onClick={handleTreeview} // Directly use the function reference
+        className="app-menu__item"
+        href="#"
+      >
+        <FiFileText />
+        <span className="app-menu__label">Pages</span>
+        <FaAngleRight
+          className={`transition-all duration-300 ease-in-out ${
+            showTreeview === "pages" ? "rotate-90" : ""
+          }`}
+        />
+      </button>
+      <div className={`treeview ${showTreeview === "pages" ? "" : "hidden"}`}>
+        {pages.map(
+          (
+            item // Change `items` to `item` for clarity
+          ) => (
+            <div key={item.id}>
+              <Link className="treeview-item" to={item.link}>
                 <FaCircle />
-                {items.title}
+                {item.title}
               </Link>
             </div>
-          ))}
+          )
+        )}
       </div>
     </div>
   );
