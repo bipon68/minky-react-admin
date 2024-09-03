@@ -7,29 +7,28 @@ import SidebarForms from "./sidebar-forms/SidebarForms";
 import SidebarTables from "./sidebar-tables/SidebarTables";
 import SidebarPages from "./sidebar-pages/SidebarPages";
 function SideBar() {
-  const [showTreeview, setShowTreeview] = useState(false);
-  const handleTreeview = () => {
-    // Correct way to toggle the state
-    setShowTreeview((prevShowTreeview) => !prevShowTreeview);
-  };
+  const [showTreeview, setShowTreeview] = useState("");
 
   return (
     <div className="app-sidebar">
       <SidebarUser />
       <SidebarDashboard />
-      <SidebarUiElements showTreeview={showTreeview} />
+      <SidebarUiElements
+        showTreeview={showTreeview}
+        setShowTreeview={setShowTreeview}
+      />
       <SidebarCharts />
       <SidebarForms
         showTreeview={showTreeview}
-        handleTreeview={handleTreeview}
+        setShowTreeview={setShowTreeview}
       />
       <SidebarTables
         showTreeview={showTreeview}
-        handleTreeview={handleTreeview}
+        setShowTreeview={setShowTreeview}
       />
       <SidebarPages
         showTreeview={showTreeview}
-        handleTreeview={handleTreeview}
+        setShowTreeview={setShowTreeview}
       />
     </div>
   );
