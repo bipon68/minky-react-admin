@@ -10,8 +10,8 @@ import TailwindEleDialogs from "./TailwindEleDialogs/TailwindEleDialogs";
 
 const TailwindsElements = () => {
   return (
-    <div className="mt-14 ml-56 ">
-      <main className="app-content">
+    <div className="mt-16 ml-sidebar ">
+      <main className="app-content ">
         <TailwindsEleHeader />
 
         <TailwindEleBtn />

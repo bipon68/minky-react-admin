@@ -5,7 +5,7 @@ import { FaLaptop } from "react-icons/fa";
 const TailwindsEleHeader = () => {
   return (
     <div>
-      <div className="app-title mt-2">
+      <div className="app-title mx-6">
         <div className="div">
           <h1>
             <i className="fa fa-laptop"></i>Tailwind Elements

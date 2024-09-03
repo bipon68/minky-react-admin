@@ -197,7 +197,7 @@
 
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
-    @apply text-white bg-teal-600;
+    @apply text-white bg-teal;
   }
 
   .nav-fill .nav-item {
@@ -229,11 +229,11 @@
   }
 
   .page-link {
-    @apply relative block px-3 py-2 ml-[-1px] leading-5 text-teal-600 bg-white border border-gray-300;
+    @apply relative block px-3 py-2 ml-[-1px] leading-5 text-teal bg-white border border-gray-300;
   }
 
   .page-link:hover {
-    @apply z-20 text-teal-800 no-underline bg-gray-200 border-gray-300;
+    @apply z-20 text-teal no-underline bg-gray-200 border-gray-300;
   }
 
   .page-link:focus {
@@ -253,7 +253,7 @@
   }
 
   .page-item.active .page-link {
-    @apply z-10 text-white bg-teal-600 border-teal-600;
+    @apply z-10 text-white bg-teal border-teal;
   }
 
   .page-item.disabled .page-link {
@@ -552,7 +552,7 @@
   }
 
   .list-group-item.active {
-    @apply z-20 text-white bg-teal-600 border-teal-600;
+    @apply z-20 text-white bg-teal border-teal;
   }
 
   .list-group-flush .list-group-item {
@@ -573,11 +573,11 @@
 
   .list-group-item-primary.list-group-item-action:hover,
   .list-group-item-primary.list-group-item-action:focus {
-    @apply text-teal-900 bg-teal-300;
+    @apply text-teal bg-teal;
   }
 
   .list-group-item-primary.list-group-item-action.active {
-    @apply text-white bg-teal-900 border-teal-900;
+    @apply text-white bg-teal border-teal;
   }
 
   .list-group-item-secondary {
@@ -594,55 +594,55 @@
   }
 
   .list-group-item-success {
-    @apply text-green-800 bg-green-200;
+    @apply text-green bg-green;
   }
 
   .list-group-item-success.list-group-item-action:hover,
   .list-group-item-success.list-group-item-action:focus {
-    @apply text-green-800 bg-green-300;
+    @apply text-green bg-green;
   }
 
   .list-group-item-success.list-group-item-action.active {
-    @apply text-white bg-green-800 border-green-800;
+    @apply text-white bg-green border-green;
   }
 
   .list-group-item-info {
-    @apply text-teal-800 bg-teal-100;
+    @apply text-teal bg-teal;
   }
 
   .list-group-item-info.list-group-item-action:hover,
   .list-group-item-info.list-group-item-action:focus {
-    @apply text-teal-800 bg-teal-200;
+    @apply text-teal bg-teal;
   }
 
   .list-group-item-info.list-group-item-action.active {
-    @apply text-white bg-teal-800 border-teal-800;
+    @apply text-white bg-teal border-teal;
   }
 
   .list-group-item-warning {
-    @apply text-yellow-800 bg-yellow-200;
+    @apply text-yellow bg-yellow;
   }
 
   .list-group-item-warning.list-group-item-action:hover,
   .list-group-item-warning.list-group-item-action:focus {
-    @apply text-yellow-800 bg-yellow-300;
+    @apply text-yellow bg-yellow;
   }
 
   .list-group-item-warning.list-group-item-action.active {
-    @apply text-white bg-yellow-800 border-yellow-800;
+    @apply text-white bg-yellow border-yellow;
   }
 
   .list-group-item-danger {
-    @apply text-red-800 bg-red-200;
+    @apply text-red bg-red;
   }
 
   .list-group-item-danger.list-group-item-action:hover,
   .list-group-item-danger.list-group-item-action:focus {
-    @apply text-red-800 bg-red-300;
+    @apply text-red bg-red;
   }
 
   .list-group-item-danger.list-group-item-action.active {
-    @apply text-white bg-red-800 border-red-800;
+    @apply text-white bg-red border-red;
   }
 
   .list-group-item-light {

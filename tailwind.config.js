@@ -44,7 +44,7 @@ module.exports = {
       fontFamily: {
         niconne: ["Niconne", "cursive"],
       },
-      colors: {
+      color: {
         primary: "#009688",
         "primary-dark": "#00635a",
         secondary: "#6c757d",

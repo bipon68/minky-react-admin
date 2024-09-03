@@ -4,25 +4,46 @@ const BtnButton = () => {
   return (
     <div>
       <div class="bs-component pb-1 flex gap-1">
-        <button class="btn btn-primary" type="button">
+        <button
+          class=" px-3 py-2 font-medium text-white  rounded-md bg-primary hover:drop-shadow"
+          type="button"
+        >
           Primary
         </button>
-        <button class="btn btn-secondary" type="button">
+        <button
+          class="px-3 py-2 font-medium text-white  rounded-md bg-secondary"
+          type="button"
+        >
           Secondary
         </button>
-        <button class="btn btn-success" type="button">
+        <button
+          class="px-3 py-2 font-medium text-white  rounded-md bg-success"
+          type="button"
+        >
           Success
         </button>
-        <button class="btn btn-info" type="button">
+        <button
+          class="px-3 py-2 font-medium text-white  rounded-md bg-info"
+          type="button"
+        >
           Info
         </button>
-        <button class="btn btn-warning" type="button">
+        <button
+          class="px-3 py-2 font-medium text-white  rounded-md bg-warning"
+          type="button"
+        >
           Warning
         </button>
-        <button class="btn btn-danger" type="button">
+        <button
+          class="px-3 py-2 font-medium text-white  rounded-md bg-danger"
+          type="button"
+        >
           Danger
         </button>
-        <button class="btn btn-link" type="button">
+        <button
+          class="px-3 py-2 font-medium text-gray  rounded-md bg-link"
+          type="button"
+        >
           Link
         </button>
       </div>

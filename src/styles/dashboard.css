@@ -164,95 +164,95 @@
   }
 
   .text-primary {
-    @apply text-teal-500 !important;
+    @apply text-teal;
   }
 
   a.text-primary:hover,
   a.text-primary:focus {
-    @apply hover:text-teal-700 focus:text-teal-700 !important;
+    @apply hover:text-teal focus:text-teal;
   }
 
   .text-secondary {
-    @apply text-gray-600 !important;
+    @apply text-gray;
   }
 
   a.text-secondary:hover,
   a.text-secondary:focus {
-    @apply hover:text-gray-700 focus:text-gray-700 !important;
+    @apply hover:text-gray focus:text-gray;
   }
 
   .text-success {
-    @apply text-green-500 !important;
+    @apply text-green;
   }
 
   a.text-success:hover,
   a.text-success:focus {
-    @apply hover:text-green-700 focus:text-green-700 !important;
+    @apply hover:text-green focus:text-green;
   }
 
   .text-info {
-    @apply text-cyan-500 !important;
+    @apply text-cyan;
   }
 
   a.text-info:hover,
   a.text-info:focus {
-    @apply hover:text-cyan-700 focus:text-cyan-700 !important;
+    @apply hover:text-cyan focus:text-cyan;
   }
 
   .text-warning {
-    @apply text-yellow-500 !important;
+    @apply text-yellow;
   }
 
   a.text-warning:hover,
   a.text-warning:focus {
-    @apply hover:text-yellow-700 focus:text-yellow-700 !important;
+    @apply hover:text-yellow focus:text-yellow;
   }
 
   .text-danger {
-    @apply text-red-500 !important;
+    @apply text-red;
   }
 
   a.text-danger:hover,
   a.text-danger:focus {
-    @apply hover:text-red-700 focus:text-red-700 !important;
+    @apply hover:text-red focus:text-red;
   }
 
   .text-light {
-    @apply text-gray-100 !important;
+    @apply text-gray;
   }
 
   a.text-light:hover,
   a.text-light:focus {
-    @apply hover:text-gray-200 focus:text-gray-200 !important;
+    @apply hover:text-gray focus:text-gray;
   }
 
   .text-dark {
-    @apply text-gray-800 !important;
+    @apply text-gray;
   }
 
   a.text-dark:hover,
   a.text-dark:focus {
-    @apply hover:text-gray-900 focus:text-gray-900 !important;
+    @apply hover:text-gray focus:text-gray;
   }
 
   .text-body {
-    @apply text-gray-700 !important;
+    @apply text-gray;
   }
 
   .text-muted,
   .app-notification__meta {
-    @apply text-gray-600 !important;
+    @apply text-gray;
   }
 
   .text-black-50 {
-    @apply text-black opacity-50 !important;
+    @apply text-black opacity-50;
   }
 
   .text-white-50 {
-    @apply text-white opacity-50 !important;
+    @apply text-white opacity-50;
   }
 
   .text-hide {
-    @apply hidden !important;
+    @apply hidden;
   }
 }

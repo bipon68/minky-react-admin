@@ -17,7 +17,7 @@ const TailwindEleBtn = () => {
         </div>
         <div className=" mb-4 flex w-full justify-between ">
           <div className="  w-full">
-            <div className="">
+            <div className=" grid gap-3">
               <BtnButton />
               <BtnDisabled />
               <BtnOutline />
