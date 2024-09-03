@@ -10,7 +10,10 @@ function SidebarForms({ setShowTreeview, showTreeview }) {
 
   return (
     <div>
-      <button className="app-menu__item" onClick={handleTreeview}>
+      <button
+        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
+        onClick={handleTreeview}
+      >
         <FaEdit />
         <span className="app-menu__label">Forms</span>
         <div className="treeview-indicator">

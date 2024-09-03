@@ -14,7 +14,10 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
 
   return (
     <div>
-      <button onClick={handleTreeview} className="app-menu__item">
+      <button
+        onClick={handleTreeview}
+        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
+      >
         <FaLaptop />
         <span className="app-menu__label">UI Elements</span>
         <FaAngleRight

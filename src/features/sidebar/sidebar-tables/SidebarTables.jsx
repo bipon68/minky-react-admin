@@ -10,7 +10,10 @@ function SidebarTables({ setShowTreeview, showTreeview }) {
 
   return (
     <div>
-      <button onClick={handleTreeview} className="app-menu__item">
+      <button
+        onClick={handleTreeview}
+        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
+      >
         <FaList />
         <span className="app-menu__label">Tables</span>
         <FaAngleRight

@@ -15,7 +15,7 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
     <div>
       <button
         onClick={handleTreeview} // Directly use the function reference
-        className="app-menu__item"
+        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
         href="#"
       >
         <FiFileText />

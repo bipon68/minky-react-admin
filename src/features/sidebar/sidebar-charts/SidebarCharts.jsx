@@ -6,7 +6,10 @@ function SidebarCharts() {
   return (
     <div>
       <div>
-        <Link className="app-menu__item" href="charts.html">
+        <Link
+          className="flex items-center gap-4 px-4 py-3 text-white text-xl"
+          href="charts.html"
+        >
           <FaChartPie />
           <span className="app-menu__label">Charts</span>
         </Link>

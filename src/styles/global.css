@@ -41,9 +41,7 @@
   .app-sidebar__user-name {
     @apply font-bold;
   }
-  .app-menu__item {
-    @apply flex items-center gap-4 px-4 py-3 text-white text-xl;
-  }
+
   .app-menu__label {
     @apply text-base text-white;
   }
