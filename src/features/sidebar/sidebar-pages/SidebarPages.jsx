@@ -3,7 +3,7 @@ import { FaAngleRight, FaCircle } from "react-icons/fa";
 import { FiFileText } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-import { pages } from "../Sidebar";
+import { pages } from "../SidebarList";
 
 function SidebarPages({ setShowTreeview, showTreeview }) {
   const handleTreeview = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAngleRight, FaCircle, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { forms } from "../Sidebar";
+import { forms } from "../SidebarList";
 
 function SidebarForms({ setShowTreeview, showTreeview }) {
   const handleTreeview = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import { FaAngleRight, FaCircle, FaLaptop } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import { uiElements } from "../Sidebar";
+import { uiElements } from "../SidebarList";
 
 function SidebarUiElements({ setShowTreeview, showTreeview }) {
   const handleTreeview = () => {
