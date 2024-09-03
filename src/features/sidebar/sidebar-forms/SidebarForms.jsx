@@ -11,7 +11,7 @@ function SidebarForms({ setShowTreeview, showTreeview }) {
   return (
     <div>
       <button
-        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
+        className="flex items-center gap-4 px-4 py-3 text-xl text-white"
         onClick={handleTreeview}
       >
         <FaEdit />
@@ -24,7 +24,11 @@ function SidebarForms({ setShowTreeview, showTreeview }) {
           />
         </div>
       </button>
-      <div className={`treeview ${showTreeview === "forms" ? "" : "hidden"}`}>
+      <div
+        className={`treeview ${
+          showTreeview === "forms" ? "max-h-[150px]" : "max-h-0 opacity-0"
+        }`}
+      >
         {forms.map((items) => (
           <div key={items.id}>
             <Link className="treeview-item" to={items.link}>

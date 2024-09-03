@@ -15,8 +15,7 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
     <div>
       <button
         onClick={handleTreeview} // Directly use the function reference
-        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
-        href="#"
+        className="flex items-center gap-4 px-4 py-3 text-xl text-white"
       >
         <FiFileText />
         <span className="app-menu__label">Pages</span>
@@ -26,7 +25,11 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
           }`}
         />
       </button>
-      <div className={`treeview ${showTreeview === "pages" ? "" : "hidden"}`}>
+      <div
+        className={`treeview ${
+          showTreeview === "pages" ? "max-h-[300px]" : "max-h-0 opacity-0"
+        }`}
+      >
         {pages.map(
           (
             item // Change `items` to `item` for clarity

@@ -12,7 +12,7 @@ function SidebarTables({ setShowTreeview, showTreeview }) {
     <div>
       <button
         onClick={handleTreeview}
-        className="flex items-center gap-4 px-4 py-3 text-white text-xl"
+        className="flex items-center gap-4 px-4 py-3 text-xl text-white"
       >
         <FaList />
         <span className="app-menu__label">Tables</span>
@@ -22,7 +22,11 @@ function SidebarTables({ setShowTreeview, showTreeview }) {
           }`}
         />
       </button>
-      <div className={`treeview ${showTreeview === "tables" ? "" : "hidden"}`}>
+      <div
+        className={`treeview ${
+          showTreeview === "tables" ? "max-h-[75px]" : "max-h-0 opacity-0"
+        }`}
+      >
         {tables.map((items) => (
           <div key={items.id}>
             <Link className="treeview-item" to={items.link}>

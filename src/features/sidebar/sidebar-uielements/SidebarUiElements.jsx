@@ -15,7 +15,7 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
   return (
     <div>
       <button
-        onClick={handleTreeview}
+        onClick={() => handleTreeview()}
         className="flex items-center gap-4 px-4 py-3 text-xl text-white"
       >
         <FaLaptop />
@@ -27,7 +27,11 @@ function SidebarUiElements({ setShowTreeview, showTreeview }) {
         />
       </button>
       <div
-        className={`treeview ${showTreeview === "uiElements" ? "" : "hidden"}`}
+        className={`treeview ${
+          showTreeview === "uiElements"
+            ? "max-h-[150px] "
+            : "max-h-0 opacity-100 "
+        }`}
       >
         {uiElements.map((items) => (
           <div key={items.id}>

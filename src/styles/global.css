@@ -47,7 +47,7 @@
   }
   /* TreeView */
   .treeview {
-    @apply text-white text-sm bg-[#2a383e];
+    @apply text-white text-sm bg-[#2a383e] transition-all duration-500 ease-in-out overflow-hidden;
   }
   .treeview-item {
     @apply flex pl-4 w-full items-center gap-4 py-2 hover:bg-[#222d32];
