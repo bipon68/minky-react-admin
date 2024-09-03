@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="app-header">
-      <div className="app-header__left">
-        <div className="app-header__logo">
+    <div className="fixed top-0 left-0 z-50 flex w-full h-14 bg-primary">
+      <div className="flex w-full">
+        <div className="w-sidebar  flex justify-center items-center bg-[#007d71] font-niconne text-white text-3xl">
           <Link to="index.html">Minky</Link>
         </div>
         {/* Sidebar toggle button */}
-        <button className="app-sidebar__toggle" aria-label="Hide Sidebar">
+        <button className="px-4 text-2xl text-white" aria-label="Hide Sidebar">
           <IoMenuSharp />
         </button>
       </div>
       {/* Navbar Right Menu */}
-      <ul className="app-nav">
-        <div className="app-search">
+      <ul className="flex items-center justify-end w-full gap-8 pr-8">
+        <div className="flex items-center justify-center p-2 bg-white">
           <input
-            className="app-search__input"
+            className="bg-transparent focus:outline-none"
             type="search"
             placeholder="Search"
           />
@@ -28,14 +28,17 @@ function Nav() {
           </button>
         </div>
         {/* Notification Menu */}
-        <li className="dropdown mt-1">
-          <button className="app-nav__item" aria-label="Show notifications">
+        <li className="mt-1 dropdown">
+          <button
+            className="text-xl text-white"
+            aria-label="Show notifications"
+          >
             <FaBell />
           </button>
         </li>
         {/* User Menu */}
-        <li className="dropdown mt-1">
-          <button className="app-nav__item" aria-label="Open Profile Menu">
+        <li className="mt-1 dropdown">
+          <button className="text-xl text-white" aria-label="Open Profile Menu">
             <FaUser />
           </button>
         </li>

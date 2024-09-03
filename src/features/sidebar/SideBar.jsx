@@ -10,7 +10,7 @@ function SideBar() {
   const [showTreeview, setShowTreeview] = useState("");
 
   return (
-    <div className="app-sidebar">
+    <div className="top-14 left-0 fixed w-sidebar h-screen z-50 bg-[#222d32]">
       <SidebarUser />
       <SidebarDashboard />
       <SidebarUiElements

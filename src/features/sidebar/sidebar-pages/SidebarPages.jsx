@@ -18,7 +18,7 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
         className="flex items-center gap-4 px-4 py-3 text-xl text-white"
       >
         <FiFileText />
-        <span className="app-menu__label">Pages</span>
+        <span className="text-base text-whitewhite">Pages</span>
         <FaAngleRight
           className={`transition-all duration-300 ease-in-out ${
             showTreeview === "pages" ? "rotate-90" : ""
@@ -26,7 +26,7 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
         />
       </button>
       <div
-        className={`treeview ${
+        className={`text-white text-sm bg-[#2a383e] transition-all duration-500 ease-in-out overflow-hidden ${
           showTreeview === "pages" ? "max-h-[300px]" : "max-h-0 opacity-0"
         }`}
       >
@@ -35,7 +35,10 @@ function SidebarPages({ setShowTreeview, showTreeview }) {
             item // Change `items` to `item` for clarity
           ) => (
             <div key={item.id}>
-              <Link className="treeview-item" to={item.link}>
+              <Link
+                className="flex pl-4 w-full items-center gap-4 py-2 hover:bg-[#222d32]"
+                to={item.link}
+              >
                 <FaCircle />
                 {item.title}
               </Link>

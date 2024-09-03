@@ -7,11 +7,11 @@ function SidebarDashboard() {
     <div>
       <div>
         <Link
-          className="flex items-center gap-4 px-4 py-3 text-white text-xl active"
+          className="flex items-center gap-4 px-4 py-3 text-xl text-white active"
           to="DashboardPage"
         >
           <AiFillDashboard />
-          <span className="app-menu__label">Dashboard</span>
+          <span className="text-base text-white">Dashboard</span>
         </Link>
       </div>
     </div>

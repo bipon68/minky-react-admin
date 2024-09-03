@@ -11,7 +11,7 @@ function SidebarCharts() {
           href="charts.html"
         >
           <FaChartPie />
-          <span className="app-menu__label">Charts</span>
+          <span className="text-base text-white">Charts</span>
         </Link>
       </div>
     </div>
