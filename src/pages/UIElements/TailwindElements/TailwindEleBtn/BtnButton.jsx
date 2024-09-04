@@ -10,10 +10,7 @@ const BtnButton = () => {
         >
           Primary
         </button>
-        <button
-          class="px-3 py-2 font-medium text-white  rounded-md bg-secondary"
-          type="button"
-        >
+        <button class="btn_sec" type="button">
           Secondary
         </button>
         <button

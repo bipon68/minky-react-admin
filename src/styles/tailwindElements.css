@@ -690,4 +690,7 @@
   .modal-backdrop {
     @apply fixed inset-0 z-[1040] bg-black;
   }
+  .btn_sec {
+    @apply px-3 py-2 font-medium text-white  rounded-md bg-secondary;
+  }
 }
